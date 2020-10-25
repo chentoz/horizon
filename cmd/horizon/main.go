@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/LdDl/horizon"
+	"github.com/chentoz/horizon"
 	"github.com/gofiber/cors"
 	"github.com/gofiber/fiber"
 	geojson "github.com/paulmach/go.geojson"
@@ -16,7 +16,7 @@ import (
 var (
 	addrFlag        = flag.String("h", "0.0.0.0", "Bind address")
 	portFlag        = flag.Int("p", 32800, "Port")
-	fileFlag        = flag.String("f", "graph.csv", "Filename of *.csv file (you can get one using https://github.com/LdDl/ch/tree/master/cmd/osm2ch#osm2ch)")
+	fileFlag        = flag.String("f", "graph.csv", "Filename of *.csv file (you can get one using https://github.com/chentoz/ch/tree/master/cmd/osm2ch#osm2ch)")
 	sigmaFlag       = flag.Float64("sigma", 50.0, "σ-parameter for evaluating emission probabilities")
 	betaFlag        = flag.Float64("beta", 30.0, "β-parameter for evaluating transition probabilities")
 	lonFlag         = flag.Float64("maplon", 0.0, "initial longitude of front-end map")

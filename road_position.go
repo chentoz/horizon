@@ -85,7 +85,7 @@ func NewRoadPositionFromS2LatLng(stateID int, graphVertex int64, e *Edge, latLng
 	return &state
 }
 
-// ID Method to fit interface State (see https://github.com/LdDl/viterbi/blob/master/viterbi.go#L9)
+// ID Method to fit interface State (see https://github.com/chentoz/viterbi/blob/master/viterbi.go#L9)
 func (state RoadPosition) ID() int {
 	return state.RoadPositionID
 }

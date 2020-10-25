@@ -11,7 +11,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/LdDl/ch"
+	"github.com/chentoz/ch"
 	"github.com/golang/geo/s2"
 	geojson "github.com/paulmach/go.geojson"
 )
@@ -19,7 +19,7 @@ import (
 // MapEngine Engine for solving finding shortest path and KNN problems
 // edges - set of edges (map[from_vertex]map[to_vertex]Edge)
 // s2Storage - datastore for B-tree. It is used for solving KNN problem
-// graph - Graph(E,V). It wraps ch.Graph (see https://github.com/LdDl/ch/blob/master/graph.go#L17). It used for solving finding shortest path problem.
+// graph - Graph(E,V). It wraps ch.Graph (see https://github.com/chentoz/ch/blob/master/graph.go#L17). It used for solving finding shortest path problem.
 type MapEngine struct {
 	edges     map[int64]map[int64]*Edge
 	s2Storage *S2Storage

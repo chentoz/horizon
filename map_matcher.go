@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/LdDl/viterbi"
+	"github.com/chentoz/viterbi"
 	"github.com/golang/geo/s2"
 )
 
@@ -179,7 +179,7 @@ func (matcher *MapMatcher) Run(gpsMeasurements []*GPSMeasurement, statesRadiusMe
 	return result, nil
 }
 
-// PrepareViterbi Prepares engine for doing Viterbi's algorithm (see https://github.com/LdDl/viterbi/blob/master/viterbi.go#L25)
+// PrepareViterbi Prepares engine for doing Viterbi's algorithm (see https://github.com/chentoz/viterbi/blob/master/viterbi.go#L25)
 /*
 	states - set of States
 	gpsMeasurements - set of Observations

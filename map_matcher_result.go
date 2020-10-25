@@ -1,7 +1,7 @@
 package horizon
 
 import (
-	"github.com/LdDl/viterbi"
+	"github.com/chentoz/viterbi"
 	"github.com/golang/geo/s2"
 )
 
