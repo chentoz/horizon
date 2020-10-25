@@ -580,7 +580,7 @@ var (
             }
 
             function doMapMatch(gpsMeasurements) {
-                
+
                 let requestData = {
                     "maxStates": 5,
                     "stateRadius": 50,
@@ -589,7 +589,7 @@ var (
                 let sourceName = "source_matched_route";
                 let layerName = "layer_matched_route";
 
-                fetch("http://localhost:32800/api/v0.1.0/mapmatch", {
+                fetch("http://localhost:31327/api/v0.1.0/mapmatch", {
                     method: "post",
                     headers: {
                         'Accept': 'application/json',
