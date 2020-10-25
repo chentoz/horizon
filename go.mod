@@ -1,4 +1,4 @@
-module github.com/LdDl/horizon
+module github.com/chentoz/horizon
 
 go 1.13
 
